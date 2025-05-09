@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-red-300: hsl(353, 100%, 46%);
+  --color-red-200: hsl(0, 95%, 59%);
+  --color-red-100: hsl(0, 100%, 95%);
+  --color-orange-500: hsl(22, 100%, 50%);
+  --color-orange-400: hsl(25, 89%, 57%);
+  --color-orange-300: hsl(31, 100%, 55%);
+  --color-orange-200: hsl(37, 77%, 58%);
+  --color-orange-100: hsla(39, 100%, 86%, 0.4);
+  --color-shade-1100: hsl(0, 0%, 0%);
+  --color-shade-1000: hsl(0, 0%, 11%);
+  --color-shade-900: hsl(0, 0%, 31%);
+  --color-shade-800: hsl(0, 0%, 37%);
+  --color-shade-700: hsl(223, 3%, 48%);
+  --color-shade-600: hsl(212, 13%, 59%);
+  --color-shade-500: hsl(32, 15%, 80%);
+  --color-shade-400: hsl(218, 5%, 67%);
+  --color-shade-300: hsl(0, 0%, 87%);
+  --color-shade-200: hsl(215, 15%, 77%);
+  --color-shade-100: hsl(0, 0%, 100%);
+  --color-green-200: hsl(128, 100%, 35%);
+  --color-green-100: hsl(174, 100%, 29%);
+  --color-blue-1600: hsl(231, 44%, 22%);
+  --color-blue-1500: hsl(228, 46%, 28%);
+  --color-blue-1400: hsl(212, 65%, 42%);
+  --color-blue-1300: hsl(216, 100%, 44%);
+  --color-blue-1200: hsl(216, 100%, 50%);
+  --color-blue-1100: hsl(216, 88%, 56%);
+  --color-blue-1000: hsl(197, 100%, 33%);
+  --color-blue-900: hsl(212, 100%, 54%);
+  --color-blue-800: hsl(200, 67%, 46%);
+  --color-blue-700: hsla(180, 37%, 47%, 0.6);
+  --color-blue-600: hsl(184, 48%, 55%);
+  --color-blue-500: hsl(216, 84%, 75%);
+  --color-blue-400: hsl(191, 100%, 50%);
+  --color-blue-300: hsl(216, 100%, 84%);
+  --color-blue-200: hsl(213, 100%, 89%);
+  --color-blue-100: hsl(215, 100%, 95%);
+}
