@@ -1,3 +1,30 @@
+import {
+  Facebook,
+  FacebookIcon,
+  HeartIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  MessageSquareTextIcon,
+  ShoppingCartIcon,
+  Twitter,
+  TwitterIcon,
+  UserRound,
+  UserRoundIcon,
+  YoutubeIcon,
+} from "lucide-react";
+
+const navbarListItems = [
+  { id: crypto.randomUUID(), title: "profile", link: "#", icon: UserRoundIcon },
+  {
+    id: crypto.randomUUID(),
+    title: "messages",
+    link: "#",
+    icon: MessageSquareTextIcon,
+  },
+  { id: crypto.randomUUID(), title: "orders", link: "#", icon: HeartIcon },
+  { id: crypto.randomUUID(), title: "cart", link: "#", icon: ShoppingCartIcon },
+];
+
 const footerDescription =
   "Best information about the best products and services.";
 
@@ -6,35 +33,35 @@ const footerSocials = [
     id: crypto.randomUUID(),
     name: "Facebook",
     link: "https://www.facebook.com/",
-    icon: "facebook",
+    icon: FacebookIcon,
     title: "Facebook",
   },
   {
     id: crypto.randomUUID(),
     name: "Twitter",
     link: "https://twitter.com/",
-    icon: "twitter",
+    icon: TwitterIcon,
     title: "Twitter",
   },
   {
     id: crypto.randomUUID(),
     name: "LinkedIn",
     link: "https://www.linkedin.com/",
-    icon: "linkedin",
+    icon: LinkedinIcon,
     title: "LinkedIn",
   },
   {
     id: crypto.randomUUID(),
     name: "Instagram",
     link: "https://www.instagram.com/",
-    icon: "instagram",
+    icon: InstagramIcon,
     title: "Instagram",
   },
   {
     id: crypto.randomUUID(),
     name: "YouTube",
     link: "https://www.youtube.com/",
-    icon: "youtube",
+    icon: YoutubeIcon,
     title: "YouTube",
   },
 ];
@@ -103,6 +130,7 @@ const footerLinksForUsers = [
 ];
 
 export {
+  navbarListItems,
   footerDescription,
   footerSocials,
   footerLinksAbout,
