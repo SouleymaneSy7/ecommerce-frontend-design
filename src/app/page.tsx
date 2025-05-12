@@ -1,3 +1,9 @@
+import Container from "@/components/common/Container";
+
 export default function Home() {
-  return <div className="text-5xl text-red-600">Hello World</div>;
+  return (
+    <Container as={"main"} className="text-5xl  w-full h-screen">
+      Hello World
+    </Container>
+  );
 }
