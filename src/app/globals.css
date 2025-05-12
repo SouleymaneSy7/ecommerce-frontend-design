@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
   --color-*: initial;
   --color-red-300: hsl(353, 100%, 46%);
   --color-red-200: hsl(0, 95%, 59%);
@@ -39,4 +40,25 @@
   --color-blue-300: hsl(216, 100%, 84%);
   --color-blue-200: hsl(213, 100%, 89%);
   --color-blue-100: hsl(215, 100%, 95%);
+
+  /* Container */
+  --container-large: 90rem;
+  --container-medium: 64rem;
+  --container-small: 48rem;
+}
+
+@utility container {
+  @apply px-5 mx-auto;
+
+  @variant md {
+    @apply max-w-[var(--container-small)] px-8;
+  }
+
+  @variant lg {
+    @apply max-w-[var(--container-medium)] px-0;
+  }
+
+  @variant xl {
+    @apply max-w-[var(--container-large)] px-0;
+  }
 }
