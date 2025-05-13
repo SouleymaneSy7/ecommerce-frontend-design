@@ -62,3 +62,36 @@
     @apply max-w-[var(--container-large)] px-0;
   }
 }
+
+@layer utilities {
+  .hero-bg-image {
+    background-image: url("/assets/main11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .quote-to-suppliers-bg-image {
+    background-image: linear-gradient(
+        to right,
+        var(--color-blue-1300),
+        var(--color-blue-700)
+      ),
+      url("/assets/image102.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@layer components {
+  .extra-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 1rem;
+  }
+
+  .suppliers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    gap: 1rem;
+  }
+}
