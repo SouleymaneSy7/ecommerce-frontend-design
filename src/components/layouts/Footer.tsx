@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-shade-100">
+    <footer className="bg-shade-100 pt-16">
       <Container
         as={"section"}
         className="flex flex-wrap gap-8 items-start justify-between mb-16"
