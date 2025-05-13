@@ -38,3 +38,17 @@ export type CardPropsType = {
   children: React.ReactNode;
   classNames?: string;
 } & React.ComponentPropsWithoutRef<"article">;
+
+export type RecommendedProductsTypes = {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+}[];
+
+export type DealsAndOffersProductsType = {
+  id: number;
+  title: string;
+  discount: number;
+  imageUrl: string;
+}[];
