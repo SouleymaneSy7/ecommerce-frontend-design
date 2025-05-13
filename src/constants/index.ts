@@ -68,25 +68,25 @@ const ourExtraServices = [
   {
     id: crypto.randomUUID(),
     title: "source from industry hubs",
-    image: "/public/assets/image108.png",
+    image: "/assets/image108.png",
     icon: SearchIcon,
   },
   {
     id: crypto.randomUUID(),
     title: "customize your products",
-    image: "/public/assets/image104.png",
+    image: "/assets/image104.png",
     icon: BoxesIcon,
   },
   {
     id: crypto.randomUUID(),
     title: "fast, reliable shipping by ocean or air",
-    image: "/public/assets/image106.png",
+    image: "/assets/image106.png",
     icon: PlaneIcon,
   },
   {
     id: crypto.randomUUID(),
     title: "product monotoring and inspection",
-    image: "/public/assets/image106.png",
+    image: "/assets/image107.png",
     icon: ShieldHalfIcon,
   },
 ];
