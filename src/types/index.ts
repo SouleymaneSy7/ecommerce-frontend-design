@@ -27,7 +27,7 @@ export interface TitlePropsType extends React.HTMLAttributes<HTMLElement> {
 export type InputsPropsType = {
   id?: string;
   label?: string;
-  type: "search" | "text" | "email";
+  type: "search" | "text" | "email" | "number";
 } & React.ComponentPropsWithoutRef<"input">;
 
 export type FormPropsType = React.ComponentPropsWithoutRef<"form"> & {
