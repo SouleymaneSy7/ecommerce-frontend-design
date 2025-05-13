@@ -1,0 +1,62 @@
+[
+  {
+    "id": 50,
+    "title": "T-shirts with multiple colors for men",
+    "price": 10.3,
+    "image": "/assets/cloths/1.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Brown winter coat medium size",
+    "price": 10.3,
+    "image": "/assets/cloths/3.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Smoking for men",
+    "price": 12.5,
+    "image": "/assets/cloths/7.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Blue wallet for men leather metarfial",
+    "price": 34.0,
+    "image": "/assets/cloths/6.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Jean bags travel for men",
+    "price": 99.0,
+    "image": "/assets/cloths/5.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Jean shorts for men blue colors",
+    "price": 9.99,
+    "image": "/assets/cloths/4.jpg"
+  },
+  {
+    "id": 56,
+    "title": "Headset for gaming",
+    "price": 8.99,
+    "image": "/assets/9.jpg"
+  },
+  {
+    "id": 57,
+    "title": "Jean bags travel for men",
+    "price": 10.3,
+    "image": "/assets/cloths/5.jpg"
+  },
+  {
+    "id": 58,
+    "title": "blue wallets for men leather metarfial",
+    "price": 10.3,
+    "image": "/assets/interiors/3.jpg"
+  },
+  {
+    "id": 59,
+    "title": "blue wallets for men leather metarfial",
+    "price": 10.3,
+    "image": "/assets/10.jpg"
+  }
+]

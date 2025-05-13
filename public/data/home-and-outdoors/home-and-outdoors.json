@@ -1,0 +1,50 @@
+[
+  {
+    "id": 30,
+    "title": "soft chairs",
+    "price": 19,
+    "image": "/assets/interiors/1.jpg"
+  },
+  {
+    "id": 31,
+    "title": "sofa & chairs",
+    "price": 19,
+    "image": "/assets/interiors/6.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Kitchen Dishes",
+    "price": 19,
+    "image": "/assets/interiors/5.jpg"
+  },
+  {
+    "id": 33,
+    "title": "smart watches",
+    "price": 19,
+    "image": "/assets/interiors/3.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Kitchen Mixer",
+    "price": 100,
+    "image": "/assets/interiors/9.jpg"
+  },
+  {
+    "id": 35,
+    "title": "blenders",
+    "price": 39,
+    "image": "/assets/interiors/8.jpg"
+  },
+  {
+    "id": 36,
+    "title": "home appliance",
+    "price": 19,
+    "image": "/assets/interiors/7.jpg"
+  },
+  {
+    "id": 37,
+    "title": "sofa & chairs",
+    "price": 19,
+    "image": "/assets/interiors/4.jpg"
+  }
+]

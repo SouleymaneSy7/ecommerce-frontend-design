@@ -1,0 +1,32 @@
+[
+  {
+    "id": 20,
+    "title": "smart watches",
+    "discount": 25,
+    "imageUrl": "/assets/techs/8.jpg"
+  },
+  {
+    "id": 21,
+    "title": "laptops",
+    "discount": 15,
+    "imageUrl": "/assets/techs/7.jpg"
+  },
+  {
+    "id": 22,
+    "title": "GoPro Cameras",
+    "discount": 40,
+    "imageUrl": "/assets/techs/6.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Headphones",
+    "discount": 25,
+    "imageUrl": "/assets/techs/5.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Canon Cameras",
+    "discount": 25,
+    "imageUrl": "/assets/techs/3.jpg"
+  }
+]

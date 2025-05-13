@@ -1,0 +1,50 @@
+[
+  {
+    "id": 40,
+    "title": "smart watches",
+    "price": 19,
+    "image": "/assets/8.jpg"
+  },
+  {
+    "id": 41,
+    "title": "cameras",
+    "price": 89,
+    "image": "/assets/6.jpg"
+  },
+  {
+    "id": 42,
+    "title": "headphones",
+    "price": 10,
+    "image": "/assets/9.jpg"
+  },
+  {
+    "id": 43,
+    "title": "smart watches",
+    "price": 90,
+    "image": "/assets/10.jpg"
+  },
+  {
+    "id": 44,
+    "title": "gaming set",
+    "price": 35,
+    "image": "/assets/5.jpg"
+  },
+  {
+    "id": 45,
+    "title": "laptops & PC",
+    "price": 340,
+    "image": "/assets/7.jpg"
+  },
+  {
+    "id": 46,
+    "title": "smartphones",
+    "price": 19,
+    "image": "/assets/2.jpg"
+  },
+  {
+    "id": 47,
+    "title": "electric kattle",
+    "price": 240,
+    "image": "/assets/1.jpg"
+  }
+]
