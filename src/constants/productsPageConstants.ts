@@ -33,7 +33,7 @@ const category = [
 const brands = [
   {
     id: crypto.randomUUID(),
-    link: "samsung",
+    title: "samsung",
   },
   {
     id: crypto.randomUUID(),
@@ -56,7 +56,7 @@ const brands = [
 const features = [
   {
     id: crypto.randomUUID(),
-    link: "metallic",
+    title: "metallic",
   },
   {
     id: crypto.randomUUID(),
