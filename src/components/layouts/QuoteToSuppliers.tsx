@@ -11,7 +11,7 @@ const QuoteToSuppliers = () => {
   return (
     <Container
       as={"section"}
-      className="quote-to-suppliers-bg-image | flex items-start justify-between py-6 px-8 mt-4 rounded-md"
+      className="quote-to-suppliers-bg-image | flex items-start justify-between py-8 px-8 mt-4 rounded-md"
     >
       <div className="text-shade-100 w-full max-w-[400px] ">
         <Title level="h2" ariaLevel={2} className="text-3xl font-semibold mb-4">
@@ -36,7 +36,7 @@ const QuoteToSuppliers = () => {
 
         <textarea
           name="message"
-          placeholder="type more details"
+          placeholder="Type more details"
           className="w-full p-2 border border-shade-400 rounded-md"
         />
 
@@ -46,12 +46,12 @@ const QuoteToSuppliers = () => {
             placeholder="Quantity"
             min={0}
             max={100}
-            className="w-full max-w-[200px] p-2 border border-shade-400 rounded-md"
+            className="w-[200px] p-2 border border-shade-400 rounded-md"
           />
 
           <select
             name="pcs"
-            className="p-2.5  border border-shade-400 rounded-md"
+            className="w-[100px] p-2.5  border border-shade-400 rounded-md"
           >
             <option value="pcs">Pcs</option>
             <option value="1-pcs">1 pcs</option>
