@@ -70,6 +70,18 @@
     background-size: cover;
   }
 
+  .outdoors-bg-image {
+    background-image: url("/assets/image92.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .consumers-bg-image {
+    background-image: url("/assets/image98.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .quote-to-suppliers-bg-image {
     background-image: linear-gradient(
         to right,
@@ -83,6 +95,17 @@
 }
 
 @layer components {
+  .deals-and-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
+  }
+
+  .recommended-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+  }
+
   .extra-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
