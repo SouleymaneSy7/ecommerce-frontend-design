@@ -49,7 +49,7 @@ Throughout the three-week program, interns will progressively build a fully func
 
 ### Tasks Completed
 
-- [ ] Home Page
+- [x] Home Page
 - [ ] Product Listing Page
 
 ### Deliverables
