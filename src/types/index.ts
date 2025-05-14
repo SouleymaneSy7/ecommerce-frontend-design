@@ -58,3 +58,17 @@ export type DealsAndOffersProductsType = {
 export type OutdoorsProductsType = ProductsType;
 
 export type ConsumerProductsType = ProductsType;
+
+export type ProductListType = {
+  id: number;
+  name: string;
+  price: number;
+  discount_price: number;
+  category: string;
+  orders: number;
+  rating: number;
+  image: string;
+  description: string;
+  liked: boolean;
+  in_stock: boolean;
+}[];
