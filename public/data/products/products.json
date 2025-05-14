@@ -115,18 +115,5 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "liked": false,
     "in_stock": true
-  },
-  {
-    "id": 10,
-    "name": "GoPro HERO6 4K Action Camera - Black",
-    "price": 99.5,
-    "discount_price": 1128.0,
-    "category": "Mobile accessory",
-    "orders": 154,
-    "rating": 7.5,
-    "image": "/assets/10.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    "liked": false,
-    "in_stock": true
   }
 ]
