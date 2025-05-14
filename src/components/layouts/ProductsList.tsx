@@ -24,7 +24,7 @@ const ProductsList = () => {
   return (
     <List
       items={products as ProductListType}
-      className="products-list-grid | py-6"
+      className="products-list-grid | col-span-3"
       renderItem={({
         id,
         category,
