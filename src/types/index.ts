@@ -39,12 +39,14 @@ export type CardPropsType = {
   classNames?: string;
 } & React.ComponentPropsWithoutRef<"article">;
 
-export type RecommendedProductsTypes = {
+export type ProductsType = {
   id: number;
   title: string;
   price: number;
   image: string;
 }[];
+
+export type RecommendedProductsTypes = ProductsType;
 
 export type DealsAndOffersProductsType = {
   id: number;
@@ -52,3 +54,7 @@ export type DealsAndOffersProductsType = {
   discount: number;
   imageUrl: string;
 }[];
+
+export type OutdoorsProductsType = ProductsType;
+
+export type ConsumerProductsType = ProductsType;
