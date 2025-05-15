@@ -72,3 +72,32 @@ export type ProductListType = {
   liked: boolean;
   in_stock: boolean;
 }[];
+
+export type PagePropsType = Promise<{ id: number | string }>;
+
+export interface ProductDetailsType {
+  id: number;
+  in_stock: boolean;
+  name: string;
+  price: string;
+  discount_price: number;
+  category: string;
+  rating: number;
+  reviews: number;
+  sold: number;
+  image: string;
+  description: string;
+  liked: boolean;
+  type: string;
+  material: string;
+  design: string;
+  customization: string;
+  protection: string;
+  shipping: string;
+  warranty: string;
+  model: string;
+  style: string;
+  certificate: string;
+  size: string;
+  memory: string;
+}
