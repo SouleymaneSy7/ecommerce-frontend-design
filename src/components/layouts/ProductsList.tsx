@@ -1,13 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 
 import Title from "../common/Title";
 import Card from "@/components/common/Card";
 import List from "@/components/common/List";
 
-import { useProducts } from "@/hooks/useProducts";
 import { ProductListType } from "@/types";
+import { useProducts } from "@/hooks/useProducts";
 import { formatCurrency } from "@/libs/formatCurrency";
 import { HeartIcon, StarIcon } from "lucide-react";
 
@@ -40,64 +41,66 @@ const ProductsList = () => {
       }) => {
         return (
           <li key={id}>
-            <Card className="bg-shade-100 shadow rounded-md">
-              <div className="w-full h-auto">
-                <Image
-                  src={image}
-                  alt={`${name} - products`}
-                  width={500}
-                  height={500}
-                  className="w-full h-full aspect-square object-contain"
-                />
-              </div>
+            <Link href={`/products/${id}`}>
+              <Card className="bg-shade-100 shadow rounded-md">
+                <div className="w-full h-auto">
+                  <Image
+                    src={image}
+                    alt={`${name} - products`}
+                    width={500}
+                    height={500}
+                    className="w-full h-full aspect-square object-contain"
+                  />
+                </div>
 
-              <div className="p-5 border-t border-shade-200">
-                <div className="flex items-center justify-between pb-2">
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <Title
-                        level="h2"
-                        ariaLevel={2}
-                        className="text-2xl font-semibold"
-                      >
-                        {formatCurrency(price)}
-                      </Title>
-                      <p className="line-through text-[#8B96A5]">
-                        {formatCurrency(discount_price)}
+                <div className="p-5 border-t border-shade-200">
+                  <div className="flex items-center justify-between pb-2">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <Title
+                          level="h2"
+                          ariaLevel={2}
+                          className="text-2xl font-semibold"
+                        >
+                          {formatCurrency(price)}
+                        </Title>
+                        <p className="line-through text-[#8B96A5]">
+                          {formatCurrency(discount_price)}
+                        </p>
+                      </div>
+
+                      <p className="text-orange-200 flex items-center gap-2">
+                        <StarIcon
+                          stroke="hsl(37, 77%, 58%)"
+                          fill="hsl(37, 77%, 58%)"
+                        />
+
+                        <span>{rating}</span>
                       </p>
                     </div>
 
-                    <p className="text-orange-200 flex items-center gap-2">
-                      <StarIcon
-                        stroke="hsl(37, 77%, 58%)"
-                        fill="hsl(37, 77%, 58%)"
+                    <button
+                      type="button"
+                      className="rounded-md p-2 border border-shade-200 cursor-pointer"
+                    >
+                      <HeartIcon
+                        stroke="hsl(216, 100%, 44%)"
+                        width={28}
+                        height={28}
                       />
-
-                      <span>{rating}</span>
-                    </p>
+                    </button>
                   </div>
 
-                  <button
-                    type="button"
-                    className="rounded-md p-2 border border-shade-200 cursor-pointer"
+                  <Title
+                    level="h3"
+                    ariaLevel={3}
+                    className="text-lg text-shade-800"
                   >
-                    <HeartIcon
-                      stroke="hsl(216, 100%, 44%)"
-                      width={28}
-                      height={28}
-                    />
-                  </button>
+                    {name}
+                  </Title>
                 </div>
-
-                <Title
-                  level="h3"
-                  ariaLevel={3}
-                  className="text-lg text-shade-800"
-                >
-                  {name}
-                </Title>
-              </div>
-            </Card>
+              </Card>
+            </Link>
           </li>
         );
       }}
