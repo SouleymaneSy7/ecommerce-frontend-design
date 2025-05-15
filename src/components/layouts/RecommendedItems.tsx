@@ -9,6 +9,7 @@ import Container from "../common/Container";
 import { useProducts } from "@/hooks/useProducts";
 import { formatCurrency } from "@/libs/formatCurrency";
 import { RecommendedProductsTypes } from "@/types";
+import Link from "next/link";
 
 const RecommendedItems = () => {
   const { products, isLoading, isError } = useProducts(
@@ -32,28 +33,30 @@ const RecommendedItems = () => {
         renderItem={(item) => {
           return (
             <li key={item.id}>
-              <Card classNames="p-4 bg-shade-100 rounded-lg shadow">
-                <div className="w-full h-auto">
-                  <Image
-                    src={item.image}
-                    alt={`${item.title} - products`}
-                    width={500}
-                    height={500}
-                    className="w-full h-full aspect-square object-contain"
-                  />
-                </div>
+              <Link href={`/products/${item.id}`}>
+                <Card classNames="p-4 bg-shade-100 rounded-lg shadow">
+                  <div className="w-full h-auto">
+                    <Image
+                      src={item.image}
+                      alt={`${item.title} - products`}
+                      width={500}
+                      height={500}
+                      className="w-full h-full aspect-square object-contain"
+                    />
+                  </div>
 
-                <div className="pt-2">
-                  <p className="mb-4">{formatCurrency(item.price)}</p>
-                  <Title
-                    level="h3"
-                    ariaLevel={3}
-                    className="text-[#8B96A5] w-full max-w-[180px] "
-                  >
-                    {item.title}
-                  </Title>
-                </div>
-              </Card>
+                  <div className="pt-2">
+                    <p className="mb-4">{formatCurrency(item.price)}</p>
+                    <Title
+                      level="h3"
+                      ariaLevel={3}
+                      className="text-[#8B96A5] w-full max-w-[180px] "
+                    >
+                      {item.title}
+                    </Title>
+                  </div>
+                </Card>
+              </Link>
             </li>
           );
         }}

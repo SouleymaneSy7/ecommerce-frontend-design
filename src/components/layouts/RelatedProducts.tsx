@@ -8,6 +8,7 @@ import { RecommendedProductsTypes } from "@/types";
 import Card from "../common/Card";
 import Image from "next/image";
 import { formatCurrency } from "@/libs/formatCurrency";
+import Link from "next/link";
 
 const RelatedProducts = () => {
   const { products, isLoading, isError } = useProducts(
@@ -34,26 +35,29 @@ const RelatedProducts = () => {
         renderItem={(item) => {
           return (
             <li key={item.id}>
-              <Card classNames="p-4">
-                <div className="w-full h-auto">
-                  <Image
-                    src={item.image}
-                    alt={`${item.title} - products`}
-                    width={500}
-                    height={500}
-                    className="w-full h-full aspect-square object-contain"
-                  />
-                </div>
+              <Link href={`/products/${item.id}`}>
+                <Card classNames="p-4">
+                  <div className="w-full h-auto">
+                    <Image
+                      src={item.image}
+                      alt={`${item.title} - products`}
+                      width={500}
+                      height={500}
+                      className="w-full h-full aspect-square object-contain"
+                    />
+                  </div>
 
-                <div className="pt-2">
-                  <Title level="h3" ariaLevel={3} className="text-xl mb-3">
-                    {item.title}
-                  </Title>
-                  <p className="text-shade-400 ">
-                    {formatCurrency(item.price)} - {formatCurrency(item.price)}
-                  </p>
-                </div>
-              </Card>
+                  <div className="pt-2">
+                    <Title level="h3" ariaLevel={3} className="text-xl mb-3">
+                      {item.title}
+                    </Title>
+                    <p className="text-shade-400 ">
+                      {formatCurrency(item.price)} -{" "}
+                      {formatCurrency(item.price)}
+                    </p>
+                  </div>
+                </Card>
+              </Link>
             </li>
           );
         }}

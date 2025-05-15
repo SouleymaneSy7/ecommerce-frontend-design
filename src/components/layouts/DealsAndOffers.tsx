@@ -8,6 +8,7 @@ import List from "../common/List";
 import Card from "../common/Card";
 import Image from "next/image";
 import { DealsAndOffersProductsType } from "@/types";
+import Link from "next/link";
 
 const DealsAndOffers = () => {
   const { products, isLoading, isError } = useProducts(
@@ -68,27 +69,29 @@ const DealsAndOffers = () => {
         renderItem={(item) => {
           return (
             <li key={item.id} className="border-l border-shade-200">
-              <Card className="py-4">
-                <div className="w-full h-auto">
-                  <Image
-                    src={item.imageUrl}
-                    alt={`${item.title} - products`}
-                    width={500}
-                    height={500}
-                    className="w-full h-full aspect-square object-contain"
-                  />
-                </div>
-
-                <div className="flex flex-col items-center gap-2">
-                  <Title level="h3" ariaLevel={3}>
-                    {item.title}
-                  </Title>
-
-                  <div className="bg-red-100 text-red-300 p-2 rounded-full">
-                    -{item.discount}%
+              <Link href={`/products/${item.id}`}>
+                <Card className="py-4">
+                  <div className="w-full h-auto">
+                    <Image
+                      src={item.imageUrl}
+                      alt={`${item.title} - products`}
+                      width={500}
+                      height={500}
+                      className="w-full h-full aspect-square object-contain"
+                    />
                   </div>
-                </div>
-              </Card>
+
+                  <div className="flex flex-col items-center gap-2">
+                    <Title level="h3" ariaLevel={3}>
+                      {item.title}
+                    </Title>
+
+                    <div className="bg-red-100 text-red-300 p-2 rounded-full">
+                      -{item.discount}%
+                    </div>
+                  </div>
+                </Card>
+              </Link>
             </li>
           );
         }}

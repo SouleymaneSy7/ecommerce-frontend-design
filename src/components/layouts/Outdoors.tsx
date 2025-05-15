@@ -7,6 +7,7 @@ import { useProducts } from "@/hooks/useProducts";
 import Image from "next/image";
 import Card from "../common/Card";
 import { OutdoorsProductsType } from "@/types";
+import Link from "next/link";
 
 const Outdoors = () => {
   const { products, isLoading, isError } = useProducts(
@@ -43,31 +44,33 @@ const Outdoors = () => {
                 key={item.id}
                 className="border border-shade-200 -ml-px -mt-px"
               >
-                <Card className="pl-4 py-5 flex justify-between items-end gap-6">
-                  <div className="flex flex-col gap-2">
-                    <Title
-                      level="h3"
-                      ariaLevel={3}
-                      className="text-lg font-semibold"
-                    >
-                      {item.title}
-                    </Title>
+                <Link href={`/products/${item.id}`}>
+                  <Card className="pl-4 py-5 flex justify-between items-end gap-6">
+                    <div className="flex flex-col gap-2">
+                      <Title
+                        level="h3"
+                        ariaLevel={3}
+                        className="text-lg font-semibold"
+                      >
+                        {item.title}
+                      </Title>
 
-                    <p className="text-[#8B96A5]">
-                      From <br /> USD {item.price}
-                    </p>
-                  </div>
+                      <p className="text-[#8B96A5]">
+                        From <br /> USD {item.price}
+                      </p>
+                    </div>
 
-                  <div className="w-20 h-auto">
-                    <Image
-                      src={item.image}
-                      alt={`${item.title} - products`}
-                      width={500}
-                      height={500}
-                      className="w-full h-full aspect-square object-contain"
-                    />
-                  </div>
-                </Card>
+                    <div className="w-20 h-auto">
+                      <Image
+                        src={item.image}
+                        alt={`${item.title} - products`}
+                        width={500}
+                        height={500}
+                        className="w-full h-full aspect-square object-contain"
+                      />
+                    </div>
+                  </Card>
+                </Link>
               </li>
             );
           }}
