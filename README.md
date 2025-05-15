@@ -50,7 +50,7 @@ Throughout the three-week program, interns will progressively build a fully func
 ### Tasks Completed
 
 - [x] Home Page
-- [ ] Product Listing Page
+- [x] Product Listing Page
 
 ### Deliverables
 
@@ -69,7 +69,7 @@ Throughout the three-week program, interns will progressively build a fully func
 
 ### Tasks Completed
 
-- [ ] Product Details Page
+- [x] Product Details Page
 
 ### Deliverables
 
