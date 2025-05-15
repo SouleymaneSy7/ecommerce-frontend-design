@@ -4,13 +4,11 @@ import useSWR from "swr";
 const fetcher = (url: string) =>
   axios.get(url).then((response) => response.data);
 
-const JSONExtension = "?format=json";
+const JSONExtension = ".json";
 
-export function useProductId(id: string | number, _path: string) {
-  console.log("useProducts", `${_path}${id}${JSONExtension}`);
-
+export function useProductId(_path: string, id: string | number) {
   const { data, error, isLoading } = useSWR(
-    id ? `${_path}${id}${JSONExtension}` : null,
+    _path && id ? `${_path}${id}${JSONExtension}` : null,
     fetcher
   );
 
