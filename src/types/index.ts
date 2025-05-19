@@ -39,6 +39,12 @@ export type CardPropsType = {
   classNames?: string;
 } & React.ComponentPropsWithoutRef<"article">;
 
+export type IconPropsType = {
+  fill?: string;
+  width?: number | string;
+  height?: number | string;
+} & React.ComponentPropsWithoutRef<"svg">;
+
 export type ProductsType = {
   id: number;
   title: string;
