@@ -156,7 +156,7 @@ const Footer = () => {
               className="inline-block w-[124px] h-[42px] "
             >
               <Image
-                src={"/assets/apple.png"}
+                src={"/assets/app-store.png"}
                 alt="download on the apple store image"
                 width={124}
                 height={42}
@@ -171,7 +171,7 @@ const Footer = () => {
               className="inline-block w-[124px] h-[42px] "
             >
               <Image
-                src={"/assets/google.png"}
+                src={"/assets/google-play.png"}
                 alt="download on the google store image"
                 width={124}
                 height={42}
