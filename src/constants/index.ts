@@ -1,9 +1,9 @@
+import { MessageIcon, ProfileIcon, HeartIcon, CartIcon, BoxIcon } from "./../icons/Icons.component";
 import {
   Boxes,
   BoxesIcon,
   Facebook,
   FacebookIcon,
-  HeartIcon,
   InstagramIcon,
   LinkedinIcon,
   LucideShieldHalf,
@@ -21,15 +21,15 @@ import {
 import { title } from "process";
 
 const navbarListItems = [
-  { id: crypto.randomUUID(), title: "profile", link: "#", icon: UserRoundIcon },
+  { id: crypto.randomUUID(), title: "profile", link: "#", icon: ProfileIcon },
   {
     id: crypto.randomUUID(),
     title: "messages",
     link: "#",
-    icon: MessageSquareTextIcon,
+    icon: MessageIcon,
   },
   { id: crypto.randomUUID(), title: "orders", link: "#", icon: HeartIcon },
-  { id: crypto.randomUUID(), title: "cart", link: "#", icon: ShoppingCartIcon },
+  { id: crypto.randomUUID(), title: "cart", link: "#", icon: CartIcon },
 ];
 
 const singleNav = [
@@ -75,7 +75,7 @@ const ourExtraServices = [
     id: crypto.randomUUID(),
     title: "customize your products",
     image: "/assets/image104.png",
-    icon: BoxesIcon,
+    icon: BoxIcon,
   },
   {
     id: crypto.randomUUID(),
