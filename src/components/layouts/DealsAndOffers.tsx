@@ -1,14 +1,16 @@
 "use client";
 
-import { useProducts } from "@/hooks/useProducts";
+import Link from "next/link";
+import Image from "next/image";
 
-import Title from "../common/Title";
-import Container from "../common/Container";
+import { useProducts } from "@/hooks/useProducts";
+import { DealsAndOffersProductsType } from "@/types";
+
 import List from "../common/List";
 import Card from "../common/Card";
-import Image from "next/image";
-import { DealsAndOffersProductsType } from "@/types";
-import Link from "next/link";
+import Title from "../common/Title";
+import Container from "../common/Container";
+import CountDownTimer from "./CountDownTimer";
 
 const DealsAndOffers = () => {
   const { products, isLoading, isError } = useProducts(
@@ -32,35 +34,7 @@ const DealsAndOffers = () => {
 
         <p className="mb-5 text-[#8B96A5]">Hygiene equipments</p>
 
-        <div className="flex items-center gap-2">
-          <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-            <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
-              04
-            </Title>
-            <p>Days</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-            <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
-              04
-            </Title>
-            <p>Days</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-            <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
-              04
-            </Title>
-            <p>Days</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-            <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
-              04
-            </Title>
-            <p>Days</p>
-          </div>
-        </div>
+        <CountDownTimer />
       </div>
 
       <List
