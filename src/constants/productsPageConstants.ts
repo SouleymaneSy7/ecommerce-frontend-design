@@ -76,4 +76,11 @@ const features = [
   },
 ];
 
-export { productsBreadCrumbs, category, brands, features };
+const conditions = [
+  { id: crypto.randomUUID(), title: "Any" },
+  { id: crypto.randomUUID(), title: "Refurbished" },
+  { id: crypto.randomUUID(), title: "Brand New" },
+  { id: crypto.randomUUID(), title: "Old Items" },
+];
+
+export { productsBreadCrumbs, category, brands, features, conditions };
