@@ -1,5 +1,6 @@
 import Container from "@/components/common/Container";
 import Newsletter from "@/components/layouts/Newsletter";
+import ProductPagination from "@/components/layouts/ProductPagination";
 import ProductsBreadCrumbs from "@/components/layouts/ProductsBreadCrumbs";
 import ProductsList from "@/components/layouts/ProductsList";
 import ProductsSideBar from "@/components/layouts/ProductsSideBar";
@@ -15,6 +16,8 @@ const page = () => {
         <ProductsSideBar />
         <ProductsList />
       </Container>
+
+      <ProductPagination />
       <Newsletter />
     </main>
   );
