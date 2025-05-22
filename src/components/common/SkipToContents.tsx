@@ -39,7 +39,7 @@ const SkipToContent = () => {
     <a
       id="skip-to-content-link"
       href="#main-content"
-      className={clsx(`fixed top-4 left-4 z-[99999] bg-primary-clr rounded-none font-medium uppercase tracking-widest text-fs-text-small text-text-inversed-clr focus-visible:ring-primary-clr focus-visible:ring-rounded-none py-3 px-5 transition-transform duration-300 ease-in-out
+      className={clsx(`fixed top-4 left-4 z-[99999] bg-blue-1100 rounded-none font-medium uppercase tracking-widest text-sm text-shade-100 focus-visible:ring-blue-bg-blue-1100 focus-visible:ring-rounded-none py-3 px-5 transition-transform duration-300 ease-in-out
         ${isVisible ? "transform translate-y-0" : "transform -translate-y-50"}
       `)}
       onFocus={handleFocus}
