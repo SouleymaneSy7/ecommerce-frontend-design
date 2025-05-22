@@ -119,6 +119,22 @@
 }
 
 @layer components {
+  .visually-hidden {
+    display: inline-block;
+    position: absolute;
+
+    height: 0.0625rem;
+    width: 0.0625rem;
+
+    border: 0;
+    clip: rect(0 0 0 0);
+
+    margin: -0.0625rem;
+    padding: 0;
+
+    overflow: hidden;
+  }
+
   .deals-and-offers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
@@ -145,6 +161,12 @@
   .products-list-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 1rem;
+  }
+
+  .save-for-later-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
     gap: 1rem;
   }
 }
