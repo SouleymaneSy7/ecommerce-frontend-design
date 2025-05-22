@@ -266,8 +266,8 @@ export const VehiculeIcon: React.FC<IconPropsType> = ({
       {...delegatedProps}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M18.5 4H16V2C16 0.9 15.1 0 14 0H2C0.9 0 0 0.9 0 2V11C0 12.1 0.9 13 2 13C2 14.66 3.34 16 5 16C6.66 16 8 14.66 8 13H14C14 14.66 15.34 16 17 16C18.66 16 20 14.66 20 13H21C21.55 13 22 12.55 22 12V8.67C22 8.24 21.86 7.82 21.6 7.47L19.3 4.4C19.11 4.15 18.81 4 18.5 4ZM5 14C4.45 14 4 13.55 4 13C4 12.45 4.45 12 5 12C5.55 12 6 12.45 6 13C6 13.55 5.55 14 5 14ZM18.5 5.5L20.46 8H16V5.5H18.5ZM17 14C16.45 14 16 13.55 16 13C16 12.45 16.45 12 17 12C17.55 12 18 12.45 18 13C18 13.55 17.55 14 17 14Z"
         fill={fill}
       />
@@ -363,21 +363,21 @@ export const MasterCardIcon: React.FC<IconPropsType> = ({
     >
       <path
         fill="#EB001B"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M7.09 5.853a5.79 5.79 0 0 1 2.17-4.531A5.65 5.65 0 0 0 5.715.074C2.559.074 0 2.661 0 5.853c0 3.19 2.559 5.778 5.715 5.778a5.65 5.65 0 0 0 3.545-1.248 5.79 5.79 0 0 1-2.17-4.53Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="#FF5E00"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M7.09 5.853a5.79 5.79 0 0 0 2.17 4.53 5.79 5.79 0 0 0 2.17-4.53 5.79 5.79 0 0 0-2.17-4.531 5.79 5.79 0 0 0-2.17 4.53Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="#F79E1C"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M12.805.074A5.65 5.65 0 0 0 9.26 1.322a5.79 5.79 0 0 1 2.17 4.53 5.79 5.79 0 0 1-2.17 4.531 5.65 5.65 0 0 0 3.545 1.248c3.156 0 5.715-2.587 5.715-5.778 0-3.192-2.56-5.779-5.715-5.779Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
     </svg>
   );
