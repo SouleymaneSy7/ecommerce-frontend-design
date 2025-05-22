@@ -40,7 +40,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={item.title}
-                    className="flex items-center justify-center w-12 h-12 rounded-full bg-[#8B96A5]"
+                    className="flex items-center justify-center w-12 h-12 rounded-full bg-[#BDC4CD] hover:bg-[#BDC4CD]/80 transition-all duration-300"
                   >
                     <Icon stroke="#fff" width={24} height={24} />
                   </a>
@@ -182,7 +182,7 @@ const Footer = () => {
         </div>
       </Container>
 
-      <section className="bg-shade-200">
+      <section className="bg-[#EFF2F4]">
         <Container
           as={"div"}
           className="flex items-center justify-between py-6"
