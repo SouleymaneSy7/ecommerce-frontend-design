@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,13 +14,12 @@ import { ProductListType } from "@/types";
 import { useProducts } from "@/hooks/useProducts";
 import { formatCurrency } from "@/libs/formatCurrency";
 import { HeartIcon, LayoutGridIcon, MenuIcon, StarIcon } from "lucide-react";
-import clsx from "clsx";
 
 const ProductsList = () => {
   const { products, isLoading, isError } = useProducts(
     "/data/products/products.json"
   );
-  const [isGridOpen, setIsGridOpen] = React.useState(false);
+  const [isGridOpen, setIsGridOpen] = React.useState(true);
 
   const gridShow = () => setIsGridOpen(true);
   const gridHide = () => setIsGridOpen(false);
