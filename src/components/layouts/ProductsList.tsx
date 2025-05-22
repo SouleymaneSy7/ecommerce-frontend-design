@@ -4,16 +4,21 @@ import * as React from "react";
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  HeartIcon,
+  LayoutGridIcon,
+  Loader2Icon,
+  MenuIcon,
+  StarIcon,
+} from "lucide-react";
 
 import Title from "../common/Title";
 import Card from "@/components/common/Card";
 import List from "@/components/common/List";
-import Container from "../common/Container";
 
 import { ProductListType } from "@/types";
 import { useProducts } from "@/hooks/useProducts";
 import { formatCurrency } from "@/libs/formatCurrency";
-import { HeartIcon, LayoutGridIcon, MenuIcon, StarIcon } from "lucide-react";
 
 const ProductsList = () => {
   const { products, isLoading, isError } = useProducts(
@@ -24,26 +29,21 @@ const ProductsList = () => {
   const gridShow = () => setIsGridOpen(true);
   const gridHide = () => setIsGridOpen(false);
 
-  if (isLoading) {
+  if (isLoading)
     return (
-      <Container
-        as={"section"}
-        className="min-h-20 grid place-items-center p-8"
-      >
-        Loading Products...
-      </Container>
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
     );
-  }
-  if (isError) {
+
+  if (isError)
     return (
-      <Container
-        as={"section"}
-        className="text-red-500 min-h-20 grid place-items-center p-8"
-      >
+      <div className="grid place-items-center min-h-20 p-8">
         Error while loading products
-      </Container>
+      </div>
     );
-  }
 
   return (
     <div className="col-span-3">

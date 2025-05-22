@@ -12,6 +12,7 @@ import {
   GlobeIcon,
   HardHatIcon,
   HeartIcon,
+  Loader2Icon,
   MessageCircleMoreIcon,
   ShieldCheckIcon,
   StarIcon,
@@ -29,11 +30,27 @@ const ProductDetails: React.FC<{
   ) as { product: ProductDetailsType; isLoading: boolean; isError: boolean };
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
+
   if (!product)
-    return <div className="text-red-500 p-4">Product Not Found!!!</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Product Not Found!!!
+      </div>
+    );
 
   return (
     <div>

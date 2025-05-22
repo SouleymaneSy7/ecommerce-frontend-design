@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import Container from "../common/Container";
 
 const ProductPagination = () => {

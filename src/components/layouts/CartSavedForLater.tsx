@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
 
 import { useProducts } from "@/hooks/useProducts";
 import { RecommendedProductsTypes } from "@/types";
@@ -20,9 +21,20 @@ const CartSavedForLater = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
     <Container

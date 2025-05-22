@@ -1,14 +1,17 @@
 "use client";
 
-import { useProducts } from "@/hooks/useProducts";
-import Container from "../common/Container";
-import Title from "../common/Title";
-import List from "../common/List";
-import { RecommendedProductsTypes } from "@/types";
-import Card from "../common/Card";
-import Image from "next/image";
-import { formatCurrency } from "@/libs/formatCurrency";
 import Link from "next/link";
+import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
+
+import Card from "../common/Card";
+import List from "../common/List";
+import Title from "../common/Title";
+import Container from "../common/Container";
+
+import { useProducts } from "@/hooks/useProducts";
+import { RecommendedProductsTypes } from "@/types";
+import { formatCurrency } from "@/libs/formatCurrency";
 
 const RelatedProducts = () => {
   const { products, isLoading, isError } = useProducts(
@@ -16,9 +19,20 @@ const RelatedProducts = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
     <Container

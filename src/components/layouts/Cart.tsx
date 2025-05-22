@@ -1,12 +1,14 @@
-import { formatCurrency } from "@/libs/formatCurrency";
-import Container from "../common/Container";
-import Form from "../common/Form";
-import List from "../common/List";
-import { cartItems, payCardList } from "@/constants/cartConstants";
-import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
+
+import Form from "../common/Form";
+import List from "../common/List";
 import Title from "../common/Title";
+import Container from "../common/Container";
+
+import { formatCurrency } from "@/libs/formatCurrency";
+import { cartItems, payCardList } from "@/constants/cartConstants";
 
 const Cart = () => {
   return (

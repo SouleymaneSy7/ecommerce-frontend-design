@@ -36,7 +36,7 @@ const Outdoors = () => {
   return (
     <Container as="section" className="bg-shade-100">
       <div className="flex rounded-md shadow mt-7 mb-5 overflow-hidden">
-        <div className="p-5 w-[420px]  border-t border-l border-b border-shade-200 overflow-hidden | outdoors-bg-image">
+        <div className="outdoors-bg-image | p-5 w-[420px]  border-t border-l border-b border-shade-200 overflow-hidden">
           <Title
             level="h2"
             ariaLevel={2}
