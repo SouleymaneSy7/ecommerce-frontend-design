@@ -61,32 +61,32 @@ const CountDownTimer = () => {
 
   return (
     <div className="flex items-center gap-2">
-      <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-        <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
+      <div className="w-14 flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
+        <Title level="h3" ariaLevel={3} className="font-bold">
           {timerDays || "00"}
         </Title>
-        <p>Days</p>
+        <p className="text-xs">Days</p>
       </div>
 
-      <div className="flex flex-col items-center gap-0.5 p-3  rounded-sm bg-shade-900 text-shade-100">
-        <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
+      <div className="w-14 flex flex-col items-center gap-0.5 p-3  rounded-sm bg-shade-900 text-shade-100">
+        <Title level="h3" ariaLevel={3} className="font-bold">
           {timerHours || "00"}
         </Title>
-        <p>Hour</p>
+        <p className="text-xs">Hour</p>
       </div>
 
-      <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-        <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
+      <div className="w-14 flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
+        <Title level="h3" ariaLevel={3} className="font-bold">
           {timerMinutes || "00"}
         </Title>
-        <p>Min</p>
+        <p className="text-xs">Min</p>
       </div>
 
-      <div className="flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
-        <Title level="h3" ariaLevel={3} className="text-2xl font-bold">
+      <div className="w-14 flex flex-col items-center gap-0.5 p-3 rounded-sm bg-shade-900 text-shade-100">
+        <Title level="h3" ariaLevel={3} className="font-bold">
           {timerSecondes || "00"}
         </Title>
-        <p>Sec</p>
+        <p className="text-xs">Sec</p>
       </div>
     </div>
   );

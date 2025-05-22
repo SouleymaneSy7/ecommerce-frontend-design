@@ -1,8 +1,10 @@
 import Link from "next/link";
-import Container from "../common/Container";
-import Inputs from "../common/Input";
-import Form from "../common/Form";
+
 import List from "../common/List";
+import Form from "../common/Form";
+import Inputs from "../common/Input";
+import Container from "../common/Container";
+
 import { navbarListItems } from "@/constants";
 
 const Header = () => {
@@ -13,18 +15,18 @@ const Header = () => {
           <img src="/assets/logo-colored.svg" alt="colored logo" />
         </Link>
 
-        <Form className="flex items-center h-[40px] border-2  rounded-[12px]  border-blue-1200">
+        <Form className="flex items-center h-[40px] rounded-md border-2 border-blue-1200 overflow-hidden">
           <Inputs
             type="search"
             name="search"
             placeholder="Search"
-            className="w-full max-w-[420px] h-full max-h-[40px]  rounded-tl-lg rounded-bl-lg pl-4"
+            className="w-[420px] h-full max-h-[40px] pl-4"
           />
 
           <select
             name="navbar-select"
             id="navbar-select"
-            className="inline-block w-full max-w-[145px] h-full border-l border-blue-1200 pl-4 pr-8"
+            className="inline-block w-[145px] h-full border-l border-blue-1200 pl-4 pr-8"
           >
             <option value="all-categories">All categories</option>
             <option value="others">Others</option>
@@ -32,7 +34,7 @@ const Header = () => {
 
           <button
             type="submit"
-            className="flex items-center justify-center bg-blue-1200 h-full w-[100px] text-shade-100 rounded-tr-md rounded-br-md px-8"
+            className="flex items-center justify-center bg-blue-1200 h-full w-[100px] text-shade-100"
           >
             <span>Search</span>
           </button>
@@ -48,16 +50,12 @@ const Header = () => {
                 <Link
                   href={item.link}
                   className="flex flex-col items-center gap-2"
+                  title={item.title}
                 >
-                  <Icon
-                    fill="#8B96A5"
-                    stroke="#8B96A5"
-                    width={24}
-                    height={24}
-                  />
+                  <Icon />
 
                   <span className="capitalize text-[#8B96A5]">
-                    {item.title}{" "}
+                    {item.title}
                   </span>
                 </Link>
               </li>

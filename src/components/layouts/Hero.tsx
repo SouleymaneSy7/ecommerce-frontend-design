@@ -47,8 +47,12 @@ const Hero = () => {
       <div className="flex flex-col gap-2 max-w-[250px]">
         <div className="flex flex-col gap-4 bg-blue-100 p-4 rounded">
           <div className="flex gap-2">
-            <div className="w-15 h-15 grid place-items-center bg-blue-200 rounded-full overflow-hidden ">
-              <User2Icon width={40} height={40} stroke="#fff" fill="#fff" />
+            <div className="w-15 h-15">
+              <img
+                src="/assets/Avatar.svg"
+                alt="avatar profile icons"
+                className="w-full h-full aspect-square object-contain"
+              />
             </div>
 
             <p className="text-xl">
@@ -73,13 +77,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="px-4 py-3 rounded-md bg-orange-500">
+        <div className="px-4 py-3 rounded-md bg-[#F38332]">
           <p className="text-shade-100 text-xl">
             Get us $10 off <br /> with a new <br /> supplier
           </p>
         </div>
 
-        <div className="px-4 py-3 rounded-md bg-blue-700">
+        <div className="px-4 py-3 rounded-md bg-[#55BDC3]">
           <p className="text-shade-100 text-xl">
             Send quotes with <br /> supplier <br /> preferences
           </p>

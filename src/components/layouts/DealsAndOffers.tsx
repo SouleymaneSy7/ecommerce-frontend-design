@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
 
 import { useProducts } from "@/hooks/useProducts";
 import { DealsAndOffersProductsType } from "@/types";
@@ -18,17 +19,28 @@ const DealsAndOffers = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
     <Container
       as="section"
-      className="flex bg-shade-100 rounded-md shadow mt-7 mb-5"
+      className="flex justify-between bg-shade-100 rounded-md shadow border border-shade-200 mt-7 mb-5"
     >
       <div className="p-4">
-        <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-1">
+        <Title level="h2" ariaLevel={2} className="text-xl font-semibold mb-1">
           Deals and Offers
         </Title>
 

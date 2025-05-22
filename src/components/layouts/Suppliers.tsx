@@ -9,7 +9,7 @@ import { suppliersByRegion } from "@/constants";
 const Suppliers = () => {
   return (
     <Container as={"section"} className="py-10">
-      <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-6">
+      <Title level="h2" ariaLevel={2} className="text-2xl font-semibold mb-6">
         Suppliers by region
       </Title>
 

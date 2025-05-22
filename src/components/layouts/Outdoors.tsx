@@ -1,13 +1,16 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
+
+import Card from "../common/Card";
+import List from "../common/List";
 import Title from "../common/Title";
 import Container from "../common/Container";
-import List from "../common/List";
-import { useProducts } from "@/hooks/useProducts";
-import Image from "next/image";
-import Card from "../common/Card";
+
 import { OutdoorsProductsType } from "@/types";
-import Link from "next/link";
+import { useProducts } from "@/hooks/useProducts";
 
 const Outdoors = () => {
   const { products, isLoading, isError } = useProducts(
@@ -15,15 +18,30 @@ const Outdoors = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
-    <Container as="section" className=" bg-shade-100 ">
-      <div className="flex rounded-md shadow mt-7 mb-5">
-        <div className="p-4 w-[404px] | outdoors-bg-image">
-          <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-8">
+    <Container as="section" className="bg-shade-100">
+      <div className="flex rounded-md shadow mt-7 mb-5 overflow-hidden">
+        <div className="p-5 w-[420px]  border-t border-l border-b border-shade-200 overflow-hidden | outdoors-bg-image">
+          <Title
+            level="h2"
+            ariaLevel={2}
+            className="text-xl font-semibold mb-8"
+          >
             Home and <br /> outdoors
           </Title>
 
@@ -36,7 +54,7 @@ const Outdoors = () => {
         </div>
 
         <List
-          className="grid grid-cols-4 grid-rows-2 pt-px pl-px"
+          className="grid grid-cols-4 grid-rows-2 grow pt-px pl-px"
           items={products as OutdoorsProductsType}
           renderItem={(item) => {
             return (
@@ -47,15 +65,11 @@ const Outdoors = () => {
                 <Link href={`/products/${item.id}`}>
                   <Card className="pl-4 py-5 flex justify-between items-end gap-6">
                     <div className="flex flex-col gap-2">
-                      <Title
-                        level="h3"
-                        ariaLevel={3}
-                        className="text-lg font-semibold"
-                      >
+                      <Title level="h3" ariaLevel={3} className="capitalize">
                         {item.title}
                       </Title>
 
-                      <p className="text-[#8B96A5]">
+                      <p className="text-sm text-[#8B96A5]">
                         From <br /> USD {item.price}
                       </p>
                     </div>

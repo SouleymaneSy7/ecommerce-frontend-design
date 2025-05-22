@@ -1,5 +1,8 @@
 "use client";
+
+import Link from "next/link";
 import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
 
 import Card from "../common/Card";
 import List from "../common/List";
@@ -8,7 +11,6 @@ import Container from "../common/Container";
 
 import { useProducts } from "@/hooks/useProducts";
 import { ConsumerProductsType } from "@/types";
-import Link from "next/link";
 
 const Consumers = () => {
   const { products, isLoading, isError } = useProducts(
@@ -16,15 +18,30 @@ const Consumers = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
     <Container as="section" className=" bg-shade-100 ">
       <div className="flex rounded-md shadow mt-7 mb-5">
-        <div className="p-4 w-[404px] | consumers-bg-image">
-          <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-8">
+        <div className="p-4 w-[420px] | consumers-bg-image">
+          <Title
+            level="h2"
+            ariaLevel={2}
+            className="text-xl font-semibold mb-8"
+          >
             Consumers <br /> electronics
             <br /> and gadgets
           </Title>
@@ -38,7 +55,7 @@ const Consumers = () => {
         </div>
 
         <List
-          className="grid grid-cols-4 grid-rows-2 pt-px pl-px"
+          className="grid grid-cols-4 grid-rows-2 grow pt-px pl-px"
           items={products as ConsumerProductsType}
           renderItem={(item) => {
             return (
@@ -49,15 +66,11 @@ const Consumers = () => {
                 <Link href={`/products/${item.id}`}>
                   <Card className="pl-5 py-5 pr-2 flex justify-between items-end gap-6">
                     <div className="flex flex-col gap-2">
-                      <Title
-                        level="h3"
-                        ariaLevel={3}
-                        className="text-lg font-semibold"
-                      >
+                      <Title level="h3" ariaLevel={3} className="capitalize">
                         {item.title}
                       </Title>
 
-                      <p className="text-[#8B96A5]">
+                      <p className="text-sm text-[#8B96A5]">
                         From <br /> USD {item.price}
                       </p>
                     </div>

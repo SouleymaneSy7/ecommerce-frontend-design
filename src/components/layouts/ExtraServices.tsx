@@ -8,7 +8,7 @@ import Image from "next/image";
 const ExtraServices = () => {
   return (
     <Container as={"section"} className="pt-10">
-      <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-6">
+      <Title level="h2" ariaLevel={2} className="text-2xl font-semibold mb-6">
         Our extra services
       </Title>
 
@@ -21,7 +21,7 @@ const ExtraServices = () => {
           return (
             <li key={item.id}>
               <Card className="w-full bg-shade-100 rounded-md shadow overflow-hidden">
-                <div className="w-full h-auto bg-[rgba(0, 0, 0, 0.8)]">
+                <div className="w-full h-[120px] | dark-image-overlay">
                   <Image
                     src={item.image}
                     alt={`${item.title}`}
@@ -31,7 +31,7 @@ const ExtraServices = () => {
                   />
                 </div>
 
-                <div className="py-4 px-5 relative">
+                <div className="p-5 relative">
                   <Title
                     level="h3"
                     ariaLevel={3}

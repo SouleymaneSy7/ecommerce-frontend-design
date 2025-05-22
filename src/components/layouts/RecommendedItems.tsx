@@ -1,5 +1,8 @@
 "use client";
+
+import Link from "next/link";
 import Image from "next/image";
+import { Loader2Icon } from "lucide-react";
 
 import List from "../common/List";
 import Card from "../common/Card";
@@ -9,7 +12,6 @@ import Container from "../common/Container";
 import { useProducts } from "@/hooks/useProducts";
 import { formatCurrency } from "@/libs/formatCurrency";
 import { RecommendedProductsTypes } from "@/types";
-import Link from "next/link";
 
 const RecommendedItems = () => {
   const { products, isLoading, isError } = useProducts(
@@ -17,13 +19,24 @@ const RecommendedItems = () => {
   );
 
   if (isLoading)
-    return <div className="flex justify-center p-8">Loading Products...</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        <p className="flex items-center gap-3">
+          <Loader2Icon className="animate-spin" /> Loading Products...
+        </p>
+      </div>
+    );
+
   if (isError)
-    return <div className="text-red-500 p-4">Error while loading products</div>;
+    return (
+      <div className="grid place-items-center min-h-20 p-8">
+        Error while loading products
+      </div>
+    );
 
   return (
     <Container as={"section"} className="py-10">
-      <Title level="h2" ariaLevel={2} className="text-2xl font-bold mb-6">
+      <Title level="h2" ariaLevel={2} className="text-2xl font-semibold mb-6">
         Recommended Items
       </Title>
 
