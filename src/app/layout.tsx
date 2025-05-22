@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
-// import SkipToContent from "@/components/common/SkipToContents";
+import SkipToContent from "@/components/common/SkipToContents";
 
 import "./globals.css";
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        {/* <SkipToContent /> */}
+        <SkipToContent />
         <Header />
         {children}
         <Footer />
