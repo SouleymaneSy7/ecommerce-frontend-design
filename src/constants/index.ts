@@ -27,7 +27,7 @@ const navbarListItems = [
     icon: MessageIcon,
   },
   { id: crypto.randomUUID(), title: "orders", link: "#", icon: HeartIcon },
-  { id: crypto.randomUUID(), title: "cart", link: "#", icon: CartIcon },
+  { id: crypto.randomUUID(), title: "cart", link: "/carts", icon: CartIcon },
 ];
 
 const singleNav = [
