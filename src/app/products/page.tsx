@@ -5,7 +5,6 @@ import ProductsBreadCrumbs from "@/components/layouts/ProductsBreadCrumbs";
 import ProductsList from "@/components/layouts/ProductsList";
 import ProductsSideBar from "@/components/layouts/ProductsSideBar";
 import SingleNav from "@/components/layouts/SingleNav";
-import { useProducts } from "@/hooks/useProducts";
 
 const page = () => {
   return (
@@ -16,7 +15,6 @@ const page = () => {
         <ProductsSideBar />
         <ProductsList />
       </Container>
-
       <ProductPagination />
       <Newsletter />
     </main>
