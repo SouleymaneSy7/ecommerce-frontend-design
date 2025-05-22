@@ -3,12 +3,21 @@ import Title from "../common/Title";
 
 const DiscountCard = () => {
   return (
-    <Container as="section" className="flex items-center justify-between bg-blue-1200 rounded-md p-8">
+    <Container
+      as="section"
+      className="discount-linear-gradient | flex items-center justify-between rounded-md p-8"
+    >
       <div>
-        <Title level="h2" ariaLevel={2} className="text-shade-100 text-2xl font-semibold">
+        <Title
+          level="h2"
+          ariaLevel={2}
+          className="text-shade-100 text-2xl font-semibold"
+        >
           Super discount on more than 100 USD
         </Title>
-        <p className="text-shade-100">Have you ever finally just write dummy info</p>
+        <p className="text-shade-100">
+          Have you ever finally just write dummy info
+        </p>
       </div>
 
       <div>

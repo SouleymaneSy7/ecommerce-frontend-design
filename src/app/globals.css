@@ -92,6 +92,30 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .discount-linear-gradient {
+    background: #237cff;
+    background: -webkit-linear-gradient(
+      70deg,
+      rgba(35, 124, 255, 1) 60%,
+      rgba(0, 90, 222, 1) 60%
+    );
+    background: -moz-linear-gradient(
+      70deg,
+      rgba(35, 124, 255, 1) 60%,
+      rgba(0, 90, 222, 1) 60%
+    );
+    background: linear-gradient(
+      70deg,
+      rgba(35, 124, 255, 1) 60%,
+      rgba(0, 90, 222, 1) 60%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#237CFF",
+      endColorstr="#005ADE",
+      GradientType=0
+    );
+  }
 }
 
 @layer components {
