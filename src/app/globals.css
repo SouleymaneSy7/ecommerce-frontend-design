@@ -85,12 +85,16 @@
   .quote-to-suppliers-bg-image {
     background-image: linear-gradient(
         to right,
-        var(--color-blue-1300),
-        var(--color-blue-700)
+        hsl(216, 88%, 56%),
+        hsla(191, 100%, 50%, 0.5)
       ),
       url("/assets/image102.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  .dark-image-overlay {
+    box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.8);
   }
 
   .discount-linear-gradient {
