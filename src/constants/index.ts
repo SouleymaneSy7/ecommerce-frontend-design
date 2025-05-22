@@ -1,24 +1,22 @@
-import { MessageIcon, ProfileIcon, HeartIcon, CartIcon, BoxIcon } from "./../icons/Icons.component";
 import {
-  Boxes,
-  BoxesIcon,
+  MessageIcon,
+  ProfileIcon,
+  HeartIcon,
+  CartIcon,
+  BoxIcon,
+  ShieldIcon,
+  PlaneIcon,
+} from "./../icons/Icons.component";
+import {
   Facebook,
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
-  LucideShieldHalf,
-  MessageSquareTextIcon,
-  PlaneIcon,
   SearchIcon,
-  ShieldHalfIcon,
-  ShoppingCartIcon,
   Twitter,
   TwitterIcon,
-  UserRound,
-  UserRoundIcon,
   YoutubeIcon,
 } from "lucide-react";
-import { title } from "process";
 
 const navbarListItems = [
   { id: crypto.randomUUID(), title: "profile", link: "#", icon: ProfileIcon },
@@ -87,7 +85,7 @@ const ourExtraServices = [
     id: crypto.randomUUID(),
     title: "product monotoring and inspection",
     image: "/assets/image107.png",
-    icon: ShieldHalfIcon,
+    icon: ShieldIcon,
   },
 ];
 
