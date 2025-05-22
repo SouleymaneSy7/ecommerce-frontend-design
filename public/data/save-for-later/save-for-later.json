@@ -1,0 +1,26 @@
+[
+  {
+    "id": 90,
+    "title": "GoPro Hero 64K Action Camera - Black",
+    "price": 99.5,
+    "image": "/assets/2.jpg"
+  },
+  {
+    "id": 91,
+    "title": "GoPro Hero 64K Action Camera - Black",
+    "price": 99.5,
+    "image": "/assets/4.jpg"
+  },
+  {
+    "id": 92,
+    "title": "GoPro Hero 64K Action Camera - Black",
+    "price": 99.5,
+    "image": "/assets/8.jpg"
+  },
+  {
+    "id": 93,
+    "title": "GoPro Hero 64K Action Camera - Black",
+    "price": 99.5,
+    "image": "/assets/7.jpg"
+  }
+]
