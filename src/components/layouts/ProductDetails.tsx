@@ -200,8 +200,14 @@ const ProductDetails: React.FC<{
         <div>
           <div className="border border-shade-200 rounded-md p-4">
             <div className="flex items-center gap-3 pb-3 border-b border-shade-200 mb-3">
-              <div className="bg-blue-600 py-3 px-4  rounded-sm grid place-items-center">
-                <span className="text-3xl font-bold text-blue-700">R</span>
+              <div className="w-24 h-24">
+                <Image
+                  src={"/assets/img.jpg"}
+                  alt=""
+                  width={96}
+                  height={96}
+                  className="w-full h-full aspect-square object-contain"
+                />
               </div>
 
               <Title level="h4" ariaLevel={4}>

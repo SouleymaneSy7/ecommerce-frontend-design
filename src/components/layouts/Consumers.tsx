@@ -35,8 +35,8 @@ const Consumers = () => {
 
   return (
     <Container as="section" className=" bg-shade-100 ">
-      <div className="flex rounded-md shadow mt-7 mb-5">
-        <div className="consumers-bg-image | p-4 w-[420px] border-t border-l border-b border-shade-200 overflow-hidden">
+      <div className="flex rounded-md shadow mt-7 mb-5 overflow-hidden">
+        <div className="consumers-bg-image | p-4 w-[420px] border-t border-l border-b border-shade-200 ">
           <Title
             level="h2"
             ariaLevel={2}
