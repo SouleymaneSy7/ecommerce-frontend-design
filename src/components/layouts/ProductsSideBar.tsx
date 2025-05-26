@@ -13,7 +13,7 @@ import {
 
 const ProductsSideBar = () => {
   return (
-    <aside className="col-span-1 pr-6">
+    <aside className="col-span-1 mr-6">
       <Accordion title="Category">
         <List
           items={category}

@@ -6,7 +6,7 @@ import { MenuIcon } from "lucide-react";
 
 const SingleNav = () => {
   return (
-    <section className="bg-shade-100">
+    <section className="bg-shade-100 border-t border-b border-shade-200">
       <Container as={"div"} className="py-5 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div>
