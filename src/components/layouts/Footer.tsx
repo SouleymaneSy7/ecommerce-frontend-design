@@ -22,7 +22,12 @@ const Footer = () => {
       >
         <div className="space-y-4">
           <Link href={"/"} className="inline-block mb-4">
-            <img src={"/assets/logo-colored.svg"} alt="colored logo" />
+            <Image
+              src="/assets/logo-colored.svg"
+              alt="colored logo"
+              width={151}
+              height={46}
+            />
           </Link>
 
           <p className="text-[#505050]">{footerDescription}</p>

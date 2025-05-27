@@ -217,10 +217,12 @@ const ProductDetails: React.FC<{
 
             <div>
               <div className="flex items-center gap-3 mb-3 text-shade-600">
-                <img
+                <Image
+                  className="w-6 h-6"
+                  width={24}
+                  height={24}
                   src={"/assets/flags/germany.png"}
                   alt=""
-                  className="w-6 h-6"
                 />
                 <p>Germany, Berlin</p>
               </div>
@@ -248,7 +250,7 @@ const ProductDetails: React.FC<{
                 type="button"
                 className="py-2 w-full rounded-md bg-shade-100 border border-shade-200 text-blue-1300"
               >
-                Seller's Profile
+                Seller `&apos;`s Profile
               </button>
             </div>
           </div>

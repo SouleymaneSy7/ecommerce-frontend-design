@@ -6,13 +6,19 @@ import Inputs from "../common/Input";
 import Container from "../common/Container";
 
 import { navbarListItems } from "@/constants";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <Container as={"header"} className="py-6">
       <nav className="flex items-center justify-between">
         <Link href={"/"}>
-          <img src="/assets/logo-colored.svg" alt="colored logo" />
+          <Image
+            src="/assets/logo-colored.svg"
+            alt="colored logo"
+            width={151}
+            height={46}
+          />
         </Link>
 
         <Form className="flex items-center h-[40px] rounded-md border-2 border-blue-1200 overflow-hidden">

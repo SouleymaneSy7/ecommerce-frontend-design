@@ -1,10 +1,9 @@
-import { User2Icon } from "lucide-react";
-
 import { heroCategoriesList, heroContents } from "@/constants";
 
 import List from "../common/List";
 import Title from "../common/Title";
 import Container from "../common/Container";
+import Image from "next/image";
 
 const Hero = () => {
   const { title, subTitle, btnText } = heroContents;
@@ -48,10 +47,12 @@ const Hero = () => {
         <div className="flex flex-col gap-4 bg-blue-100 p-4 rounded">
           <div className="flex gap-2">
             <div className="w-15 h-15">
-              <img
+              <Image
                 src="/assets/Avatar.svg"
                 alt="avatar profile icons"
                 className="w-full h-full aspect-square object-contain"
+                width={44}
+                height={44}
               />
             </div>
 

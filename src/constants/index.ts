@@ -8,12 +8,10 @@ import {
   PlaneIcon,
 } from "./../icons/Icons.component";
 import {
-  Facebook,
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
   SearchIcon,
-  Twitter,
   TwitterIcon,
   YoutubeIcon,
 } from "lucide-react";
